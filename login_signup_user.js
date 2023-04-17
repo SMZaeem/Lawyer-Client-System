@@ -111,7 +111,7 @@ import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.6.10
         const user = userCredential.user;
         console.log("Success! Welcome back!");
         // window.alert("Success! Welcome back!");
-        window.location.href = "/clientSide/client_side.html";
+        window.location.href = "/Lawyer-CLient-System/clientSide/client_side.html";
         // ...
       })
       .catch((error) => {
