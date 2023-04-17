@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Lawyer Client Management System</title>
+  <!-- <link rel="stylesheet" href="user_layer.css"> -->
+</head>
+
+<style>
+  body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+  }
+  h1{
+    float:top;
+    color:white;
+  }
+    .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #0583D2;
+    height: 75%;
+    width: 75%;
+  }
+  /* button{
+            margin: 15px;
+            padding: 0.75%;
+            background-color: #F8F9FA;
+            border-width: 0px;
+            border-color: #F8F9FA;
+            border-radius: 5px;
+            border-top-style: hidden;
+            border-right-style: hidden;
+            border-left-style: hidden;
+            border-bottom-style: hidden;
+        
+           } */
+  /*
+   button:hover{
+            border-width: 1px;
+            border-color: #cccfd2;
+            box-shadow: 2px 2px 5px 2px #4a0a57;
+            background-color: #b551d1 ;
+            color: white;
+           
+           }
+    .Buttons{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border:1px solid #8E24AA !important;
+                color:#8E24AA;
+                height:40px;
+
+           } */
+
+.buttons button{
+       background-color: #4EAEF3;
+       border:1px solid #ffffff !important;
+       color:#ffffff;
+       height:40px;
+       border-radius: 5%;
+}
+
+.buttons button:hover{
+       border:1px solid #000000 !important;
+       color:#000000;
+       height:40px;
+       background-color:#ffffff;
+       
+}
+
+/* .buttons button:nth-child(2){
+       border:1px solid #8E24AA !important;
+       background-color:#8E24AA;
+       color:#fff;
+        height:40px;
+} */
+</style>
+
+<body>
+  <div class="container">
+    <h1>Lawyer Client Management System</h1>
+    <div class="profile-selection">
+      <h2>Select Your Profile:</h2>
+      <div class="buttons">
+       <button class="btn btn-outline-primary px-4" id="lawyer-btn" onclick = "location.href='login_signup_lawyer.html';">I am a Lawyer</button>
+       <button class="btn btn-outline-primary px-4" id="client-btn" onclick = "location.href='login_signup_user.html';">I am a Client</button>
+      </div>
+    </div>
+  </div>
+  <script src="user_lawyer.js"></script>
+</body>
+
+
+
+
+</html>
