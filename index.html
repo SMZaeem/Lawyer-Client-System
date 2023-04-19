@@ -11,6 +11,7 @@
 </head>
 
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
   body{
     width: 100%;
     height: 100%;
@@ -22,7 +23,16 @@
   h1{
     float:top;
     color:white;
+    font-family: "Fredoka One", cursive;
   }
+  h2{
+    font-family: "Fredoka One", cursive;
+
+  }
+  * {
+  font-family: sans-serif;
+}
+
     .container {
     display: flex;
     align-items: center;
@@ -32,37 +42,7 @@
     height: 75%;
     width: 75%;
   }
-  /* button{
-            margin: 15px;
-            padding: 0.75%;
-            background-color: #F8F9FA;
-            border-width: 0px;
-            border-color: #F8F9FA;
-            border-radius: 5px;
-            border-top-style: hidden;
-            border-right-style: hidden;
-            border-left-style: hidden;
-            border-bottom-style: hidden;
-        
-           } */
-  /*
-   button:hover{
-            border-width: 1px;
-            border-color: #cccfd2;
-            box-shadow: 2px 2px 5px 2px #4a0a57;
-            background-color: #b551d1 ;
-            color: white;
-           
-           }
-    .Buttons{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border:1px solid #8E24AA !important;
-                color:#8E24AA;
-                height:40px;
 
-           } */
 
 .buttons button{
        background-color: #4EAEF3;
@@ -70,6 +50,9 @@
        color:#ffffff;
        height:40px;
        border-radius: 5%;
+       margin-left: 10px;
+       margin-right: 10px;
+
 }
 
 .buttons button:hover{
@@ -80,24 +63,21 @@
        
 }
 
-/* .buttons button:nth-child(2){
-       border:1px solid #8E24AA !important;
-       background-color:#8E24AA;
-       color:#fff;
-        height:40px;
-} */
 </style>
 
 <body>
   <div class="container">
     <h1>Lawyer Client Management System</h1>
+    <br>
     <div class="profile-selection">
       <h2>Select Your Profile:</h2>
+    </div>
+      <br>
       <div class="buttons">
        <button class="btn btn-outline-primary px-4" id="lawyer-btn" onclick = "location.href='login_signup_lawyer.html';">I am a Lawyer</button>
        <button class="btn btn-outline-primary px-4" id="client-btn" onclick = "location.href='login_signup_user.html';">I am a Client</button>
       </div>
-    </div>
+    
   </div>
   <script src="user_lawyer.js"></script>
 </body>
